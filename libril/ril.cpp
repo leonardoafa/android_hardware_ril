@@ -4819,7 +4819,7 @@ internalRequestTimedCallback (RIL_TimedCallback callback, void *param,
 
 
 extern "C" void
-RIL_requestTimedCallback (RIL_TimedCallback#if (RIL_VERSION == 11) callback, void *param,
+RIL_requestTimedCallback (RIL_TimedCallback callback, void *param,
                                 const struct timeval *relativeTime) {
     internalRequestTimedCallback (callback, param, relativeTime);
 }
